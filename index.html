@@ -10,8 +10,7 @@
         <h1>Processing project by Mirko Zedda</h1>
         <script type="text/processing">
 
-float x=0;
-float diametro=40;
+float raggio=40;
 
 void setup() {
   size(600, 600);
@@ -24,11 +23,11 @@ void draw() {
   {
     pushMatrix();
     rotate(x + i);
-    ellipse(0, 0 + i, diametro);
+    ellipse(0, 0 + i, raggio, raggio);
     popMatrix();
   }
   x+=0.005;
-}
+}  
             
         </script>
         <canvas></canvas>
